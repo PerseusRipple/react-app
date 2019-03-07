@@ -63,22 +63,24 @@ export default function App() {
           />
           <button
             type="submit"
-            // className="city-button"
+            className="city-button"
             onClick={() => getSiteRestaurant()}
           />
         </section>
       </section>
       <section className="eatGuide">
         <h2>Where Do You Want To Eat?</h2>
-        <ul className="box">
-          {restaurants.map((restaurant, i) => {
-            return (
-              <>
-                <li key={i}>{restaurant.restaurant.name}</li>
-              </>
-            );
-          })}
-        </ul>
+        <section className="list">
+          <ul className="box">
+            {restaurants.map((restaurant, i) => {
+              return (
+                <>
+                  <li key={i}>{restaurant.restaurant.name}</li>
+                </>
+              );
+            })}
+          </ul>
+        </section>
       </section>
       <footer>Made with 💛from SDG </footer>
     </>

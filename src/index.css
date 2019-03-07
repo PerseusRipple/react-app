@@ -50,18 +50,29 @@ button.city-button {
   text-align: center;
 }
 
-ul.box {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-
 .box {
-  border: 0.5rem solid black;
+  /* border: 0.5rem solid black; */
   list-style: none;
   height: 10rem;
   margin-top: 2rem;
+  width: 100%;
+}
+
+ul.box {
+  display: flex;
+  justify-content: space-around;
+  align-content: left;
+  flex-wrap: wrap;
+  flex-direction: row;
+  color: rgb(32, 32, 99);
+  font-weight: bold;
+}
+
+li {
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 footer {
