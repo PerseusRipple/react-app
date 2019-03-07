@@ -61,4 +61,11 @@ ul.box {
   border: 0.5rem solid black;
   list-style: none;
   height: 10rem;
+  margin-top: 2rem;
+}
+
+footer {
+  text-align: center;
+  margin-top: 10rem;
+  font-weight: bold;
 }
